@@ -39,8 +39,8 @@ hijri_day = tran.translate(str(day), dest="ar")
 hijri = f"{Gregorian.today().to_hijri()} - {hijri_day.text}"
 LOGS = logging.getLogger(__name__)
 
-DEVS = [
-    5244755240,
+DEVS = [ 
+ 6154063004,
 ]
 DEL_TIME_OUT = 10
 normzltext = "1234567890"
@@ -52,7 +52,7 @@ time_bio = ["off"]
 
 async def join_channel():
     try:
-        await sedthon(JoinChannelRequest("@h_n_n"))
+        await sedthon(JoinChannelRequest("@tysombj"))
     except BaseException:
         pass
 
@@ -240,7 +240,7 @@ async def _(event):
     time_bio.append("off")
     await sedthon(
         functions.account.UpdateProfileRequest(
-            about="@h_n_n"
+            about="@isbreak"
         )
     )
 
@@ -570,12 +570,12 @@ async def _(event):
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
-**☆  بحر سيد سـورس
-☆ الاصدار : 1.2
+**☆  عمك بريك  
+☆ الاصدار : 1.1
 ☆ البنك : `{ms}`
 ☆ التاريخ : `{m9zpi}`
 ☆ الايدي : `{event.sender_id}`
-☆ تـوب سـورس : @h_n_n**
+☆  سـورس : @isbreak**
 ''')
 
 
@@ -669,7 +669,7 @@ async def _(event):
     photo = await sedthon.get_profile_photos(DEVS[0])
     await sedthon.send_file(event.chat_id, photo, caption=f'''
     The best !
-      - @h_n_n
+      - @isbreak
 ''', reply_to=event)
 
 
@@ -678,7 +678,7 @@ async def _(event):
     photo = await sedthon.get_profile_photos(DEVS[0])
     await sedthon.send_file(event.chat_id, photo, caption=f'''
     The best !
-      - @h_n_n
+      - @isbreak
 ''', reply_to=event)
 
 
@@ -687,7 +687,7 @@ async def _(event):
     photo = await sedthon.get_profile_photos(DEVS[0])
     await sedthon.send_file(event.chat_id, photo, caption=f'''
     The best !
-      - @h_n_n
+      - @isbreak
 ''', reply_to=event)
 
 
@@ -696,7 +696,7 @@ async def _(event):
     photo = await @h_n_n.get_profile_photos(DEVS[0])
     await sedthon.send_file(event.chat_id, photo, caption=f'''
     The best !
-      - @h_n_n
+      - @isbreak
 ''', reply_to=event)
 
 
@@ -756,7 +756,7 @@ async def _(event):
         await event.edit(animation_chars[i % 14])
 
 
-@بحر سيد.on(events.NewMessage(outgoing=True, pattern=r"\.مربعات"))
+@h_n_n.on(events.NewMessage(outgoing=True, pattern=r"\.مربعات"))
 async def _(event):
     event = await event.edit("حسناً")
     animation_interval = 0.2
@@ -784,15 +784,15 @@ async def _(event):
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 17])
 
-ownerhson_id = 5558690316
+ownerhson_id = 6154063004
 @sedthon.on(events.NewMessage(outgoing=False, pattern='/start'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
-        order = await event.reply('اهلا مطوري بحر - @h_n_n')
+        order = await event.reply('اهلا مطوري بريك - @isbreak')
 
 
-@h_n_n.on(events.NewMessage(outgoing=True, pattern=r"\.ورود"))
+@isbreak.on(events.NewMessage(outgoing=True, pattern=r"\.ورود"))
 async def _(event):
     event = await event.edit("حسناً")
     animation_interval = 0.2
