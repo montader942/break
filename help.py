@@ -7,10 +7,10 @@ commands = '''
 '''
 soursce = '''
 `- -- -- -- -- -- -- -- --`
-**بحر سيد source is working ⚡
-Dev : 𝙩𝙤𝙥𝙖𝙘
-Dev : @h_n_n
-Source Ch : @h_n_n**
+**the best break ⚡
+Dev : @isBreak
+Dev : @FvyvvF
+Sadthon Source : @TYSOMbj**
 `-- -- -- -- -- -- -- -- --`
 '''
 trans = '''
@@ -126,7 +126,7 @@ tele_checker2 = '''
 5 : خماسي حرفين
 6 : خماسي حرف
 7 : سباعي حرف
-مثال : .صيد 500 4 HHHN
+مثال : .صيد 500 4 break
 '''
 t06bot = '''
 `-- -- -- -- -- -- -- -- --`**
